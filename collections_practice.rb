@@ -64,5 +64,5 @@ end
 
 def add_s(array)
   i = 0
-  array.each {|value| value << "s" if i = 1; i += 1 }
+  array.each {|value| value << "s" if i != 1; i += 1 }
 end
