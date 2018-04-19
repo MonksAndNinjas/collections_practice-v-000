@@ -46,8 +46,8 @@ def swap_elements_from_to(array, index_1, index_2)
     i += 1
   end
 
-  i = b + 1
-  swapped_array << array[a]
+  i = 0
+  swapped_array << array[a]    # array.each |value| if i > b swapped_array << array[i]
   until i == array.length
     swapped_array << array[i]
     i += 1
