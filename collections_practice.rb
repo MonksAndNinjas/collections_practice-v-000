@@ -26,10 +26,17 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index_1, index_2)
+  if index_1 > index_2
+    a = index_2
+    b = index_1
+  else
+    a = index_1
+    b = index_2
+  end
   swapped_array = []
   i = 0
 
-  until i == index_1
+  until i ==
     swapped_array << array[i]
     i += 1
   end
