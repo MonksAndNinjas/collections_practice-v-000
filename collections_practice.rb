@@ -33,8 +33,6 @@ def swap_elements_from_to(array, index_1, index_2)
     a = index_1
     b = index_2
   end
-
-
   swapped_array = []
   i = 0
 
