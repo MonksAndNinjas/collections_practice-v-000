@@ -60,5 +60,5 @@ end
 def reverse_array(array)
   reversed_array = []
   array.each {|element| reversed_array.unshift(element)}
-    
-  
+  reversed_array
+end
