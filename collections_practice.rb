@@ -64,9 +64,6 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.each do |value|
-   if value.length > 2
-     value[2] = "$"
-   end
+  array.each {|value| value[2] = "$" if value.length > 2}
  end
 end
