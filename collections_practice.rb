@@ -31,14 +31,16 @@ def swap_elements_from_to(array, index_1, index_2)
   b = index.sort{|a,b| a <=> b}[1]
   swapped_array = []
   i = 0
-
-  array.each {|value| swapped_array << value and i += 1 if i < a }      # array.each |value| if i < a swapped_array << array[i] i+=1
-  i = 0
-  swapped_array << array[b]
-  array.each {|value| swapped_array << value if i > a and i < b; i += 1}
-  i = 0
-  swapped_array << array[a]    # array.each |value| if i > b swapped_array << array[i] i += 1.
-  array.each {|value| swapped_array << value if i > b; i += 1}
+  array.each {|value| swapped_array << value if i < a;    # array.each |value| if i < a swapped_array << array[i] i+=1
+                      swapped_array << array[b] if i == a;
+                      swapped_array << value if i > a and i < b;
+                      swapped_array << array[a] if i == b;
+                      swapped_array << value if i > b;
+                      i += 1
+  #array.each {|value| swapped_array << value if i > a and i < b; i += 1}
+  #i = 0
+  #swapped_array << array[a]    # array.each |value| if i > b swapped_array << array[i] i += 1.
+  #array.each {|value| swapped_array << value if i > b; i += 1}
   swapped_array
 end
 
