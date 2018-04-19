@@ -32,3 +32,14 @@ def swap_elements_from_to(array, index_1, index_2)
   until i == index_1
     swapped_array << array[i]
     i += 1
+  end
+
+  i = index_1 + 1
+  swapped_array << array[index_2]
+  until i == index_2
+    swapped_array << array[i]
+    i += 1
+  end
+
+  i = index_2 + 1
+  swapped_array << array[index_1]
