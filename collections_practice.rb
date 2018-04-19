@@ -62,6 +62,7 @@ def sum_array(array)
   array.each do |value|
     if sum_of_array == nil
     sum_of_array << value
+    else
     added_value = value + sum_of_array[0]
     sum_of_array << added_value
   end
