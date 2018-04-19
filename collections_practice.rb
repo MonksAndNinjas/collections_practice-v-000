@@ -41,7 +41,10 @@ def swap_elements_from_to(array, index_1, index_2)
 
 
   swapped_array << array[b]
-  array.each {|value, i| i += 1; swapped_array << value if i > a and i < b}
+  array.each do |value| 
+    swapped_array and i += 1 << value if i > a and i < b
+    i +=1 if i < a and i > b
+  end      
 
 
   swapped_array << array[a]    # array.each |value| if i > b swapped_array << array[i] i += 1.
