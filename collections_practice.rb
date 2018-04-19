@@ -58,7 +58,7 @@ end
 
 def sum_array(array)
   # [0] + [1] + [2] + ... + [array.length -1] = sum_of_array
-  sum_of_array = []
+  sum_of_array = [0]
   array.each do |value|
     if sum_of_array[0] == nil
       sum_of_array << value
