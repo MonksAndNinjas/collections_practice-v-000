@@ -68,5 +68,5 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.each {|value| a_values << value if value.first == "a"}
+  array.select{|value| value[0] == "a"}
 end
