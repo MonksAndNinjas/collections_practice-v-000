@@ -45,8 +45,9 @@ def swap_elements_from_to(array, index_1, index_2)
     if i > a and i < b
      swapped_array << value
      i += 1
-   else
+    else
      i += 1
+    end
   end
 
   i = 0
