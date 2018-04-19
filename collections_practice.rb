@@ -58,8 +58,6 @@ end
 
 def sum_array(array)
   sum_of_array = 0
-  array.each do |value|
-      sum_of_array += value
-  end
+  array.each {|value| sum_of_array += value}
   sum_of_array
 end
