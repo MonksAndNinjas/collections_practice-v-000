@@ -28,8 +28,8 @@ end
 def swap_elements_from_to(array, index_1, index_2)
   index = [index_1, index_2]
   index.sort {|a, b| a <=> b}
-  index[0] = a
-  index[1] = b
+  a = index[0]
+  b = index[1]
 
   swapped_array = []
   i = 0
