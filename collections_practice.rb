@@ -56,3 +56,6 @@ def swap_elements_from_to(array, index_1, index_2)
   end
   swapped_array
 end
+
+def reverses_array(array)
+  
