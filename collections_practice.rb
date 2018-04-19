@@ -61,7 +61,8 @@ def sum_array(array)
   sum_of_array = [0]
   array.each do |value|
       added_value = value + sum_of_array[0]
-      added_value = sum_of_array[0]
+      sum_of_array << added_value
+      sum_of_array.shift()
   end
   sum_of_array
 end
