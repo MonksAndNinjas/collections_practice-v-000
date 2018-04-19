@@ -59,6 +59,9 @@ end
 
 def reverse_array(array)
   reversed_array = []
-  array.each {|element| reversed_array.unshift(element)}
+  array.each {|value| reversed_array.unshift(value)}
   reversed_array
 end
+
+def kesha_maker(array)
+  array.each |value
