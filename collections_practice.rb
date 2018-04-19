@@ -61,3 +61,6 @@ def sum_array(array)
   array.each {|value| sum_of_array += value}
   sum_of_array
 end
+
+def add_s(array)
+end
