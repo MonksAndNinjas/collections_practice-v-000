@@ -57,5 +57,5 @@ def find_a(array)
 end
 
 def sum_array(array)
-  
+  # [0] + [1] + [2] + ... + [array.length -1]
 end
