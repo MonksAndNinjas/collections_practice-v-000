@@ -64,5 +64,5 @@ def sum_array(array)
       sum_of_array << added_value
       sum_of_array.shift()
   end
-  sum_of_array
+  sum_of_array[0]
 end
