@@ -57,11 +57,9 @@ def find_a(array)
 end
 
 def sum_array(array)
-  sum_of_array = [0]
+  sum_of_array = 0
   array.each do |value|
-      added_value = value + sum_of_array[0]
-      sum_of_array << added_value
-      sum_of_array.shift()
+      sum_of_array += value
   end
-  sum_of_array[0]
+  sum_of_array
 end
