@@ -26,24 +26,25 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index_1, index_2)
-  if index_1 > index_2
-    a = index_2
-    b = index_1
-  else
-    a = index_1
-    b = index_2
-  end
+  index = [index_1, index_2]
+  index.sort {|a, b| a <=> b}
+  index[0] = a
+  index[1] = b
+  #if index_1 > index_2
+  #  a = index_2
+  #  b = index_1
+  #else
+  #  a = index_1
+  #  b = index_2
+  #end
   swapped_array = []
   i = 0
 
   array.each {|value| swapped_array << value and i += 1 if i < a }      # array.each |value| if i < a swapped_array << array[i] i+=1
 
-
-  i = 0
   swapped_array << array[b]
   array.each {|value| swapped_array << value if i > a and i < b; i += 1}
 
-  i = 0
   swapped_array << array[a]    # array.each |value| if i > b swapped_array << array[i] i += 1.
   array.each {|value| swapped_array << value if i > b; i += 1}
    swapped_array
