@@ -27,21 +27,22 @@ end
 
 def swap_elements_from_to(array, index_1, index_2)
   index = [index_1, index_2]
-  a = index.sort {|a, b| a <=> b}[0]
-  b = index.sort {|a, b| a <=> b}[1]
+  sorted_index = index.sort {|a, b| a <=> b}
+  a = sorted_index[0]
+  b = sorted_index[1]
 
 
   swapped_array = []
   i = 0
 
-  array.each {|value| swapped_array << value and i += 1 if i < a }
+  array.each {|value| swapped_array << value and i += 1 if i < a }      # array.each |value| if i < a swapped_array << array[i] i+=1
 
   swapped_array << array[b]
   array.each {|value| swapped_array << value if i > a and i < b; i += 1}
 
-  swapped_array << array[a]
+  swapped_array << array[a]    # array.each |value| if i > b swapped_array << array[i] i += 1.
   array.each {|value| swapped_array << value if i > b; i += 1}
-  swapped_array
+   swapped_array
 end
 
 def reverse_array(array)
