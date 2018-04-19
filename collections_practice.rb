@@ -64,7 +64,7 @@ def sum_array(array)
       sum_of_array << value
     else
       added_value = value + sum_of_array[0]
-      sum_of_array << added_value
+      added_value = sum_of_array[0]
     end
   end
   sum_of_array
