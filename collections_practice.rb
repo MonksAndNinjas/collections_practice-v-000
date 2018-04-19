@@ -66,3 +66,7 @@ end
 def kesha_maker(array)
   array.each {|value| value[2] = "$" if value.length > 2}
 end
+
+def find_a(array)
+  array.each {|value| a_values << value if value.first == "a"}
+end
