@@ -57,5 +57,8 @@ def swap_elements_from_to(array, index_1, index_2)
   swapped_array
 end
 
-def reverses_array(array)
+def reverse_array(array)
+  reversed_array = []
+  array.each {|element| reversed_array.unshift(element)}
+    
   
