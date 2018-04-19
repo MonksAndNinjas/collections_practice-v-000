@@ -26,13 +26,9 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index_1, index_2)
-  if index_1 > index_2
-    a = index_2
-    b = index_1
-  else
-    a = index_1
-    b = index_2
-  end
+  index = [index_1, index_2]
+  a = index.sort{|a,b| a <=> b}[0]
+  b = index.sort{|a,b| a <=> b}[1]
   swapped_array = []
   i = 0
 
